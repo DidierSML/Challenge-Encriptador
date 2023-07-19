@@ -3,21 +3,39 @@ var decryptButton = document.querySelector(".decryptButton");
 var animation = document.querySelector(".animationContainer");
 var paragraphContainer = document.querySelector(".paragraphContainer");
 var result = document.querySelector(".resultText");
+var operationSuccessfully = false;
 
 encryptButton.onclick = encrypt;
 decryptButton.onclick = decrypt;
 
 
+//encrypt function
 function encrypt(){
-    hide();
-    var textBox = saveText()// textContent
-    result.textContent = encryptText(textBox);
+
+    var textBox = saveText();
+    if (textBox.trim() !== "") {
+        hide();
+        result.textContent = encryptText(textBox);
+        operationSuccessfully = true;
+    } else {
+        show();
+        result.textContent = ""; 
+    }
+    
 }
 
+//decrypt function
 function decrypt(){
-    hide();
-    var textBox = saveText()
-    result.textContent = decryptText(textBox);
+    var textBox = saveText();
+    if (textBox.trim() !== "") {
+        hide();
+        result.textContent = decryptText(textBox);
+        operationSuccessfully = true;
+    } else {
+        show();
+        result.textContent = ""; 
+    }
+    
 }
 
 function saveText(){
@@ -26,8 +44,14 @@ function saveText(){
 }
 
 function hide(){
-    animation.classList.add("ocultar");
-    paragraphContainer.classList.add("ocultar");
+    animation.style.visibility = "hidden";
+    paragraphContainer.style.visibility = "hidden";
+
+}
+
+function show() {
+    animation.style.visibility = "visible";
+    paragraphContainer.style.visibility = "visible";
 }
 
 function encryptText(message){

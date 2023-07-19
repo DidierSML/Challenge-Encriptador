@@ -31,10 +31,10 @@ main{
 .textBoxContainer{
     position: absolute;
     left: 200px;
-    top: 100px;
+    top: 80px;/*caja texto*/
     padding-left: 50px;
     width: 760px;
-    height: 600px;
+    height: 400px;
 
 }
 
@@ -56,7 +56,7 @@ main{
 
 .alert{
     position: absolute;
-    top: 720px;
+    top: 510px;/*solo letras y minusculas*/
     left: 170px;
     display: flex;
     color: #495057;
@@ -69,7 +69,7 @@ main{
 
 .buttonContainer{
     position: absolute;
-    top: 750px;
+    top: 535px;
     height: 80px;
     padding-left: 15%;
     padding-top: 15px;
@@ -106,7 +106,7 @@ main{
     display: block;
     position: relative;
     width: 400px;
-    height: 880px;
+    height: 630px;
     right: 200px;
     padding-right: 20px;
     background-color: #ffffff;
@@ -118,7 +118,7 @@ main{
 .animationContainer{
     position: absolute;
     left: 30px;
-    top: 180px;
+    top: 45px;
     box-sizing: border-box;
     padding-top: 50px;
 }
@@ -126,7 +126,7 @@ main{
 .paragraphContainer{
     position: absolute;
     box-sizing: border-box;
-    top: 570px;
+    top: 410px;/*ningun mensaje fue encontrado*/
     left: 40px;
  }
 
@@ -149,9 +149,9 @@ main{
 
 .resultContainer{
     position: absolute;
-    bottom: 330px;
+    bottom: 100px;  /*altura respuesta*/
     width: 320px;
-    height: 450px;
+    height: 500px;
     padding: 0;
     box-sizing: border-box;
     margin-left: 25px;
@@ -166,7 +166,7 @@ main{
     display: flex;
     position: absolute;
     bottom: 100px;
-    top: 700px;
+    top: 480px;
     padding-left: 40px;
 }
 
