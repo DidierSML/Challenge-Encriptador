@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,45 +17,46 @@
     </header>
 
     <main>
-        <section class="section1">
+        <div class="globalContainer">
+            <section class="section1">
 
-            <div class="textBoxContainer">
-                <textarea placeholder="Ingrese el Texto aquí"
-                class="textBox"></textarea>
-            </div>
+                <div class="textBoxContainer">
+                    <textarea placeholder="Ingrese el Texto aquí"
+                    class="textBox"></textarea>
+                </div>
 
-            <div class="alert">
-                <img src="images/alerta.svg" alt="alert">
-                <p> Solo letras minúsculas y sin acentos</p>
-            </div>
+                <div class="alert">
+                    <img src="images/alerta.svg" alt="alert">
+                    <p> Solo letras minúsculas y sin acentos</p>
+                </div>
 
-            <div class ="buttonContainer">
-                <input type ="button" class="encryptButton"
-                value="Encriptar!">
+                <div class ="buttonContainer">
+                    <input type ="button" class="encryptButton"
+                    value="Encriptar!">
 
-                <input type ="button" class="decryptButton"
-                value="Desencriptar!">
-            </div>
-        </section>
+                    <input type ="button" class="decryptButton"
+                    value="Desencriptar!">
+                </div>
+            </section>
 
-        <section class="section2">
-            <div class ="animationContainer">
-                <img src="images/ImagenBuscador.svg" alt="buscador">
-            </div>
+            <section class="section2">
+                <div class ="animationContainer">
+                    <img src="images/ImagenBuscador.svg" alt="buscador">
+                </div>
 
-            <div class="paragraphContainer">
-                <h3>Ningún mensaje fue <br> encontrado</h3>
-                <p>Ingrese el texto que desees encriptar o <br> desencriptar.</p>
-            </div>
+                <div class="paragraphContainer">
+                    <h3>Ningún mensaje fue <br> encontrado</h3>
+                    <p>Ingrese el texto que desees encriptar o <br> desencriptar.</p>
+                </div>
 
-            <div class="copyContainer">
-                <input type="button" class ="copyButton" value="Copiar">
-            </div>
-            <div class="resultContainer">
-                <p class="resultText">
-            </div>
-
-        </section>
+                <div class="copyContainer">
+                    <input type="button" class ="copyButton" value="Copiar">
+                </div>
+                <div class="resultContainer">
+                    <p class="resultText">
+                </div>
+            </section>
+        </div>
     </main>
     <script src ="script.js"></script>
     
